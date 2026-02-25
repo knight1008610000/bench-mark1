@@ -1,0 +1,17 @@
+model:
+  name: "deepseek-coder"
+  base_url: "https://api.deepseek.com/v1"
+  api_key: "sk-eae03d07408b4ce6a4d2c1ace3ac00d8"
+
+evaluation:
+  data_path: "data/humaneval/HumanEval.jsonl"
+  num_samples_per_task: 10               # 每个任务生成的样本数（测试用，正式评估建议200）
+  max_tasks: 5                           # 最大评估任务数（测试用，正式评估设置为164）
+  temperature: 0.1
+  max_tokens: 1024
+  max_retries: 3
+  request_delay: 1.0                     # 请求延迟（秒）
+
+output:
+  directory: "results"
+  format: "json"

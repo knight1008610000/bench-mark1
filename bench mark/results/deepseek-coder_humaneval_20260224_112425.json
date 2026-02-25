@@ -1,0 +1,73 @@
+{
+  "evaluation_info": {
+    "model_name": "deepseek-coder",
+    "evaluation_date": "2026-02-24T11:24:25.592770",
+    "dataset": "HumanEval",
+    "total_tasks": 5,
+    "evaluated_tasks": 5,
+    "evaluation_duration": "1m 2s"
+  },
+  "evaluation_parameters": {
+    "data_path": "data/humaneval/HumanEval.jsonl",
+    "num_samples_per_task": 10,
+    "max_tasks": 5,
+    "temperature": 0.1,
+    "max_tokens": 1024,
+    "max_retries": 3,
+    "request_delay": 1.0
+  },
+  "summary_metrics": {
+    "pass@1": 0.30000000000000004,
+    "pass@10": 0.9821286580287379,
+    "pass@100": 0.0,
+    "total_passed_samples": 15,
+    "total_failed_samples": 35,
+    "overall_pass_rate": 0.3
+  },
+  "detailed_results": [
+    {
+      "task_id": "HumanEval/0",
+      "samples_count": 10,
+      "passed_count": 3,
+      "pass_rate": 0.3,
+      "pass@1": 0.30000000000000004,
+      "pass@10": 1.0
+    },
+    {
+      "task_id": "HumanEval/1",
+      "samples_count": 10,
+      "passed_count": 4,
+      "pass_rate": 0.4,
+      "pass@1": 0.4,
+      "pass@10": 1.0
+    },
+    {
+      "task_id": "HumanEval/2",
+      "samples_count": 10,
+      "passed_count": 1,
+      "pass_rate": 0.1,
+      "pass@1": 0.09999999999999998,
+      "pass@10": 1.0
+    },
+    {
+      "task_id": "HumanEval/3",
+      "samples_count": 10,
+      "passed_count": 3,
+      "pass_rate": 0.3,
+      "pass@1": 0.30000000000000004,
+      "pass@10": 1.0
+    },
+    {
+      "task_id": "HumanEval/4",
+      "samples_count": 10,
+      "passed_count": 4,
+      "pass_rate": 0.4,
+      "pass@1": 0.4,
+      "pass@10": 1.0
+    }
+  ],
+  "system_info": {
+    "python_version": "3.8+",
+    "evaluation_framework": "联想小天集成评估系统"
+  }
+}
