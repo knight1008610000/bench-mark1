@@ -1,7 +1,7 @@
 model:
   name: "deepseek-coder"
   base_url: "https://api.deepseek.com/v1"
-  api_key: "sk-eae03d07408b4ce6a4d2c1ace3ac00d8"
+  api_key: "your deepseek api here"
 
 evaluation:
   data_path: "data/humaneval/HumanEval.jsonl"
@@ -15,3 +15,4 @@ evaluation:
 output:
   directory: "results"
   format: "json"
+
